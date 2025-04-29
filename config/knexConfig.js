@@ -1,14 +1,14 @@
-module.exports = {
+export default {
     development: {
-        client: 'mysql',
+        client: "mysql",
         connection: {
-            host: 'localhost',
-            user: 'Asha',
-            password: 'Asha@200$',
-            database: 'registration',
+            host: process.env.HOSTNAME || "localhost",
+            user: process.env.USER || "Asha",
+            password: process.env.PASSWORD || "Asha@200$",
+            database: process.env.DATABSE || "registration",
         },
         migrations: {
-            directory: './migrations',
+            directory: "../migration",
         },
     },
 };

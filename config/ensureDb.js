@@ -17,7 +17,7 @@ connection.connect((err) => {
     }
 
     connection.query(
-        `CREATE DATABASE IF NOT EXISTS\ $ { dbName }\
+        `CREATE DATABASE IF NOT EXISTS\ ${ dbName }\
         `,
         (err, result) => {
             if (err) {
