@@ -1,5 +1,7 @@
 import mysql from "mysql";
+import dotenv from "dotenv";
 
+dotenv.config();
 const config = {
     host: process.env.HOSTNAME || "localhost",
     user: process.env.USER || "Asha",
