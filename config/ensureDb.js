@@ -2,7 +2,7 @@ import mysql from "mysql";
 
 const config = {
     host: process.env.HOSTNAME || "localhost",
-    user: process.env.USERNAME || "Asha",
+    user: process.env.USER || "Asha",
     password: process.env.PASSWORD || "Asha@200$",
 };
 
